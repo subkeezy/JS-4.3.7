@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(39, 39, 39);
+  overflow-x: hidden;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  margin-top: .5em;
+  width: 16em;
+  list-style: none;
+}
+
+.search-app {
+  width: 100vw;
+  height: 100%vh;
+  display: flex;
+  flex-direction: column;
+  align-items:  center;
+  justify-content: center;
+  padding: 0px 200px;
+}
+
+.heading {
+  display: inline-block;
+  color: white;
+  letter-spacing: .1em;
+  text-align: center;
+  font-size: 4em;
+  margin-bottom: 1em;
+}
+
+.heading .span1 {
+  background-color: rgb(255, 160, 35);
+  color: rgb(39, 39, 39);
+}
+
+.heading .span2 {
+  color: rgb(255, 160, 35);
+}
+
+.input {
+  height: 3em;
+  padding: .5em;
+  width: 50em;
+  border-radius: .3em;
+  border: none;
+}
+
+.secret-message {
+  color: white;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.repos-title {
+  color: rgb(255, 160, 35);
+  letter-spacing: 0.05em;
+  padding-bottom: .5em;
+  border-bottom: .1em solid rgb(158, 158, 158);
+}
+
+.input:focus {
+  border: none;
+  outline: 0.2em solid rgb(228, 165, 83);
+}
+
+.users-list {
+  width: 40em;
+}
+
+.users-item {
+  color: transparent;
+}
+
+.item-btn {
+  width: 100%;
+  border-bottom: .1em solid rgb(158, 158, 158);
+  padding: .7em .3em;
+  background-color: transparent;
+  color: white;
+  transition: background-color .2s ease-in;
+}
+
+.item-btn:hover {
+  background-color: rgb(255, 171, 60);
+}
+
+.message {
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.info-title {
+  margin-top: 2em;
+  color: rgb(255, 171, 60);
+}
+
+.info-list {
+  width: 50em;
+}
+
+.info-item {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  transition: background-color .5s ease;
+}
+
+.info-item:not(:last-child) {
+  border-bottom: .1em solid rgb(158, 158, 158);
+}
+
+.info-item:hover {
+  background-color: rgb(66, 66, 66);
+  border-radius: .2em;
+}
+
+.repo-text {
+  color: white;
+}
+
+.del-btn {
+  margin-top: 1.5em;
+  border-radius: .5em;
+  height: 2em;
+  transition: background-color .5s ease;
+}
+
+.del-btn:hover {
+  background-color: red;
+  color: white;
+}
